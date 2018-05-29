@@ -1,4 +1,4 @@
-﻿### Various basic registry commands, I personally output to a file as baseline and compare at another point in time to search changes
+ ﻿### Various basic registry commands, I personally output to a file as baseline and compare at another point in time to search changes
 ### These are meant to be a very basic starting point
 ### In order to compare, an example block could be:
 
