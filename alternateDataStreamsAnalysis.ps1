@@ -1,6 +1,6 @@
 ﻿# The following lines deal with finding and reading alternate data streams as well as some file analysis
 
-gci -recurse | % { gi $_.FullName -stream * } | where stream -ne ':$Data' -ea SilentlyContinue # Dragons ahead, this line reads the drive recursively..
+gci -recurse | % { gi $_.FullName -stream * } | where stream -ne ':$Data' -ea SilentlyContinue # Dragons ahead, this line reads the whole drive recursively..
 
 # Files could be hashed by Get-FileHash -Path c:\somefile -Algorithm MD5
 
