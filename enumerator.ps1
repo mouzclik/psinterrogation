@@ -63,6 +63,11 @@ Get-WmiObject win32_share >> enum1.txt
 echo "`r`n------------------------`r`nScheduled Tasks`r`n------------------------`r`n" >> enum1.txt
 get-scheduledtask >> enum1.txt
 
+#Startup process list
+
+echo "`r`n------------------------`r`nStartup Processes`r`n------------------------`r`n" >> enum1.txt
+wmic startup list
+
 #Running processes
 
 echo "`r`n------------------------`r`nRunning Processes (in Kbs)`r`n------------------------`r`n" >> enum1.txt
