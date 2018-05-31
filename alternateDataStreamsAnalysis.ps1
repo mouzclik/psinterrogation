@@ -1,4 +1,5 @@
-﻿# The following lines deal with finding and reading alternate data streams as well as some file analysis
+# COMMANDS BROKEN RIGHT NOW, WILL UPDATE LATER
+# The following lines deal with finding and reading alternate data streams as well as some file analysis
 
 gci -recurse -path C:\ | % { gi $_.FullName -stream * } | where stream -ne ':$Data' -ea SilentlyContinue # Dragons ahead, this line reads the whole drive recursively..
 
